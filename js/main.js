@@ -47,11 +47,12 @@ loginOpen.addEventListener('click', function (){
     loginBlock.classList.toggle('login__block__active');
 });
 
-const loginOpen = document.querySelector('.login__popup'),
-        loginBlock = document.querySelector('.register__block');
+const registerOpen = document.querySelector('.btn__register'),
+        registerBlock = document.querySelector('.register__block');
 
-loginOpen.addEventListener('click', function (){
-    loginBlock.classList.toggle('register__block__active');
+    registerOpen.addEventListener('click', function (){
+    registerBlock.classList.toggle('register__block__active');
+    loginBlock.classList.remove('login__block__active');
 });
 
 
